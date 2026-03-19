@@ -9,7 +9,7 @@
     <title>Golden Spoon 🍽️</title>
 </head>
 
-<body class="relative h-screen bg-gradient-to-r from-[#3e5151] via-[#decba4] to-[#3e5151]" >
+<body class="relative h-screen bg-gradient-to-r from-[#3e5151] via-[#decba4] to-[#3e5151]">
     <!--NavBar-->
     <div class="shadow-2xl flex justify-between items-center mx-10 mt-10 p-5 rounded-t-2xl bg-white">
         <div class="flex justify-center items-center gap-2">
@@ -19,9 +19,9 @@
 
 
         <div class="flex gap-10 ">
-            <a href="" class="hover:underline hidden lg:block">Home</a>
+            <a href="#" class="hover:underline hidden lg:block">Home</a>
             <a href="" class="hover:underline hidden lg:block">Menu</a>
-            <a href="" class="hover:underline hidden lg:block">Booking</a>
+            <a href="./booking.html" class="hover:underline hidden lg:block">Booking</a>
             <a href="" class="hover:underline hidden lg:block">Feedback</a>
 
         </div>
@@ -37,18 +37,36 @@
         class="fixed top-0 right-0 bg-black text-white w-1/2 h-screen flex flex-col p-10 gap-10 z-40 transition duration-1000 translate-x-full">
         <i id="three" class="fa-solid fa-xmark absolute right-10 cursor-pointer hover:text-amber-300"
             style="color: white"></i>
-        <a href="" class="hover:underline mt-10">Home</a>
+        <a href="#" class="hover:underline mt-10">Home</a>
         <a href="" class="hover:underline ">Menu</a>
-        <a href="" class="hover:underline ">Booking</a>
+        <a href="./booking.html" class="hover:underline ">Booking</a>
         <a href="" class="hover:underline ">Feedback</a>
     </div>
 
     <!---->
     <div class="realtive px-10 md:h-[55vh] lg:h-[70vh] w-full overflow-hidden rounded-xl">
         <img src="./img/p4.jpg" class="w-full h-full object-cover">
-        <h1 class="absolute text-white font-bold text-xl left-15 top-40 md:text-3xl md:left-20 md:top-50 lg:text-5xl lg:left-20 lg:top-50 ">Welcome To Golden Spoon</h1>
-        <h1 class="absolute text-white font-bold text-xl left-15 top-48 md:text-3xl md:left-20 md:top-60 lg:text-5xl lg:left-20 lg:top-65 ">Restaurant</h1>
+        <h1
+            class="absolute text-white font-bold text-xl left-15 top-40 md:text-3xl md:left-20 md:top-50 lg:text-5xl lg:left-20 lg:top-50 ">
+            Welcome To Golden Spoon</h1>
+        <h1
+            class="absolute text-white font-bold text-xl left-15 top-48 md:text-3xl md:left-20 md:top-60 lg:text-5xl lg:left-20 lg:top-65 ">
+            Restaurant</h1>
+        <p
+            class="absolute text-white font-semibold left-15 text-sm top-58 md:left-20 md:top-70 md:text-md lg:left-20 lg:top-80 lg:text-lg ">
+            Delicious Indian,Chinese ,& Western Food.</p>
+        <div>
+            <a href="./booking.html"><button id='four'
+                    class="absolute rounded p-1 lg:p-2 md:p-2 left-15 top-70  md:left-20 md:top-85 lg:left-20 lg:top-100 text-white bg-white bg-gradient-to-r from-[#1b5c63] to-[#0D3C45] cursor-pointer shadow-2xl hover:shadow-2xl  hover:scale-105  transition duration-500">Book
+                    Table</button>
+            </a>
+            <a href="./booking.html"><button id="five"
+                    class="absolute rounded p-1 lg:p-2 md:p-2 left-40 top-70 md:left-50 md:top-85 lg:left-50 lg:top-100 text-white bg-gradient-to-l from-[#1b5c63] to-[#0D3C45] cursor-pointer shadow-2xl hover:shadow-2xl  hover:scale-105 transition duration-500">Order
+                    Now</button>
+            </a>
+        </div>
     </div>
+
 
     <script src="script.js"></script>
 </body>

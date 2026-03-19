@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Booking</title>
+</head>
+
+<body class="bg-gradient-to-r h-screen w-screen from-[#3e5151] via-[#decba4] to-[#3e5151]">
+    <div class="shadow-2xl flex justify-between items-center mx-10 mt-10 p-5 rounded-t-2xl bg-white">
+        <div class="flex justify-center items-center gap-2">
+            <i class="fa-solid fa-bell-concierge fa-xl" style="color: rgb(22, 22, 22);"></i>
+            <h1 class="text-2xl font-bold">The Golden Spoon</h1>
+        </div>
+
+
+        <div class="flex gap-10 ">
+            <a href="./index.html" class="hover:underline hidden lg:block">Home</a>
+            <a href="" class="hover:underline hidden lg:block">Menu</a>
+            <a href="./booking.html" class="hover:underline hidden lg:block">Booking</a>
+            <a href="" class="hover:underline hidden lg:block">Feedback</a>
+
+        </div>
+
+        <div id="one" class="lg:hidden">
+            <i class="fa-solid fa-bars cursor-pointer" style="color: rgb(22, 22, 22);"></i>
+        </div>
+
+
+    </div>
+    <div id="two"
+        class="fixed top-0 right-0 bg-black text-white w-1/2 h-screen flex flex-col p-10 gap-10 z-40 transition duration-1000 translate-x-full">
+        <i id="three" class="fa-solid fa-xmark absolute right-10 cursor-pointer hover:text-amber-300"
+            style="color: white"></i>
+        <a href="./index.html" class="hover:underline mt-10">Home</a>
+        <a href="" class="hover:underline ">Menu</a>
+        <a href="./booking.html" class="hover:underline ">Booking</a>
+        <a href="" class="hover:underline ">Feedback</a>
+    </div>
+    <script src="booking.js"></script>
+</body>
+
+</html>
