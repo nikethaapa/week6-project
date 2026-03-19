@@ -22,6 +22,7 @@
             <a href="#" class="hover:underline hidden lg:block">Home</a>
             <a href="" class="hover:underline hidden lg:block">Menu</a>
             <a href="./booking.html" class="hover:underline hidden lg:block">Booking</a>
+            <a href="" class="hover:underline hidden lg:block">Orders</a>
             <a href="" class="hover:underline hidden lg:block">Feedback</a>
 
         </div>
@@ -40,31 +41,56 @@
         <a href="#" class="hover:underline mt-10">Home</a>
         <a href="" class="hover:underline ">Menu</a>
         <a href="./booking.html" class="hover:underline ">Booking</a>
+        <a href="" class="hover:underline ">Orders</a>
         <a href="" class="hover:underline ">Feedback</a>
     </div>
 
-    <!---->
-    <div class="realtive px-10 md:h-[55vh] lg:h-[70vh] w-full overflow-hidden rounded-xl">
-        <img src="./img/p4.jpg" class="w-full h-full object-cover">
-        <h1
-            class="absolute text-white font-bold text-xl left-15 top-40 md:text-3xl md:left-20 md:top-50 lg:text-5xl lg:left-20 lg:top-50 ">
-            Welcome To Golden Spoon</h1>
-        <h1
-            class="absolute text-white font-bold text-xl left-15 top-48 md:text-3xl md:left-20 md:top-60 lg:text-5xl lg:left-20 lg:top-65 ">
-            Restaurant</h1>
-        <p
-            class="absolute text-white font-semibold left-15 text-sm top-58 md:left-20 md:top-70 md:text-md lg:left-20 lg:top-80 lg:text-lg ">
-            Delicious Indian,Chinese ,& Western Food.</p>
-        <div>
-            <a href="./booking.html"><button id='four'
-                    class="absolute rounded p-1 lg:p-2 md:p-2 left-15 top-70  md:left-20 md:top-85 lg:left-20 lg:top-100 text-white bg-white bg-gradient-to-r from-[#1b5c63] to-[#0D3C45] cursor-pointer shadow-2xl hover:shadow-2xl  hover:scale-105  transition duration-500">Book
-                    Table</button>
-            </a>
-            <a href="./booking.html"><button id="five"
-                    class="absolute rounded p-1 lg:p-2 md:p-2 left-40 top-70 md:left-50 md:top-85 lg:left-50 lg:top-100 text-white bg-gradient-to-l from-[#1b5c63] to-[#0D3C45] cursor-pointer shadow-2xl hover:shadow-2xl  hover:scale-105 transition duration-500">Order
-                    Now</button>
-            </a>
+    <!-- heroSection -->
+    <div class="relative px-10  h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-[70vh] w-full overflow-hidden rounded-xl">
+
+        <img src="./img/p1.jpg" class="w-full h-full object-cover">
+
+        <div class="mx-10 absolute inset-0 bg-black/40"></div>
+
+        <div class="absolute inset-0 flex flex-col justify-center items-start px-5 md:px-10 text-white">
+
+            <h1 class="mx-10 text-xl md:text-3xl lg:text-5xl font-bold leading-tight">
+                Welcome To Golden Spoon <br> Restaurant
+            </h1>
+
+            <p class="mx-10 mt-3 text-sm md:text-lg">
+                Delicious Indian, Chinese & Western Food.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex gap-10 mx-10 mt-5">
+                <a href="./booking.html">
+                    <button class="px-4 py-2 bg-[#1b5c63] rounded shadow-lg hover:-translate-y-2 transition duration-500">
+                        Book Table
+                    </button>
+                </a>
+
+                <a href="./booking.html">
+                    <button class="px-4 py-2 bg-[#0D3C45] rounded shadow-lg hover:-translate-y-2 transition duration-500">
+                        Order Now
+                    </button>
+                </a>
+            </div>
+
         </div>
+    </div>
+
+    <div class="mx-10 p-5 bg-white">
+        <h1 class="text-xl font-bold">Popular Dishes</h1>
+        <div class="flex mt-3 gap-5 md:gap-7 lg:gap-10 ">
+            <p class="border-b-3 border-transparent hover:border-b-amber-500">All</p>
+            <p class="border-b-3 border-transparent hover:border-b-amber-500">Indian</p>
+            <p class="border-b-3 border-transparent hover:border-b-amber-500">Chinese</p>
+            <p class="border-b-3 border-transparent hover:border-b-amber-500">Western</p>
+        </div>
+
+
+
     </div>
 
 
