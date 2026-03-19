@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="relative h-screen bg-gradient-to-r from-[#3e5151] via-[#decba4] to-[#3e5151]">
+
+    <div class="shadow-2xl flex justify-between items-center mx-10 mt-10 p-5 rounded-2xl bg-white">
+        <div class="flex justify-center items-center gap-2">
+            <i class="fa-solid fa-bell-concierge fa-xl" style="color: rgb(22, 22, 22);"></i>
+            <h1 class="text-2xl font-bold">The Golden Spoon</h1>
+        </div>
+
+
+        <div class="flex gap-10 ">
+            <a href="./index.html" class="hover:underline hidden lg:block">Home</a>
+            <a href="" class="hover:underline hidden lg:block">Menu</a>
+            <a href="./booking.html" class="hover:underline hidden lg:block">Booking</a>
+            <a href="" class="hover:underline hidden lg:block">Orders</a>
+            <a href="./feedback.html" class="hover:underline hidden lg:block">Feedback</a>
+
+        </div>
+
+        <div id="one" class="lg:hidden">
+            <i class="fa-solid fa-bars cursor-pointer" style="color: rgb(22, 22, 22);"></i>
+        </div>
+
+
+    </div>
+
+    <div id="two"
+        class="fixed top-0 right-0 bg-black text-white w-1/2 h-screen flex flex-col p-10 gap-10 z-40 transition duration-1000 translate-x-full">
+        <i id="three" class="fa-solid fa-xmark absolute right-10 cursor-pointer hover:text-amber-300"
+            style="color: white"></i>
+        <a href="#" class="hover:underline mt-10">Home</a>
+        <a href="" class="hover:underline ">Menu</a>
+        <a href="./booking.html" class="hover:underline ">Booking</a>
+        <a href="" class="hover:underline ">Orders</a>
+        <a href="" class="hover:underline ">Feedback</a>
+    </div>
+
+
+
+    <div class="w-md md:w-xl lg:w-xl mx-auto mt-5 flex w-full flex-col border rounded-lg bg-white p-8">
+        <h2 class="title-font mb-1 text-lg font-medium text-gray-900">Feedback</h2>
+        <div class="mb-4">
+            <label for="email" class="text-sm leading-7 text-gray-600">Email</label>
+            <input type="email" id="email" name="email"
+                class="w-full rounded border border-gray-300 bg-white py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200" />
+        </div>
+        <div class="mb-4">
+            <label for="message" class="text-sm leading-7 text-gray-600">Message</label>
+            <textarea id="message" name="message"
+                class="h-32 w-full resize-none rounded border border-gray-300 bg-white py-1 px-3 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"></textarea>
+        </div>
+        <button
+            class="rounded border-0 bg-indigo-500 py-2 px-6 text-lg text-white hover:bg-indigo-600 focus:outline-none">Send</button>
+        <p class="mt-3 text-xs text-gray-500">Feel free to connect with us on social media platforms.</p>
+    </div>
+
+    <script src="./Js/feedback.js"></script>
+</body>
+
+</html>
