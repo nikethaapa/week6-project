@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="./dist/output.css" rel="stylesheet">
     <title>Golden Spoon 🍽️</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
 </head>
 
 <body class="relative h-screen bg-gradient-to-r from-[#3e5151] via-[#decba4] to-[#3e5151]">
@@ -77,24 +79,161 @@
                 </a>
             </div>
 
+           
+           
+
         </div>
     </div>
+    
 
-    <div class="mx-10 p-5 bg-white">
-        <h1 class="text-xl font-bold">Popular Dishes</h1>
-        <div class="flex mt-3 gap-5 md:gap-7 lg:gap-10 ">
-            <p class="border-b-3 border-transparent hover:border-b-amber-500">All</p>
-            <p class="border-b-3 border-transparent hover:border-b-amber-500">Indian</p>
-            <p class="border-b-3 border-transparent hover:border-b-amber-500">Chinese</p>
-            <p class="border-b-3 border-transparent hover:border-b-amber-500">Western</p>
-        </div>
+    <!-- popular dishes -->
 
+            
+    <body>
+        <section class="popular" id="popular-dishes" >
+        <h2>Popular Dishes</h2>
 
 
-    </div>
+            <div class="tabs">
+                <span class="active">All</span>
+                <span>Chinese</span>
+                <span>Indian</span>
+                <span>Western</span>
+            </div>
 
 
-    <script src="./Js/script.js"></script>
+            <!-- Cards Container -->
+            
+            <div class="card-container">
+
+                <div class="card chinese">
+                <img src="img/noodles.jpeg">
+                <h3>Chinese Noodles</h3>
+                <p>₹599</p>
+                <button>Add to Cart</button>
+                </div>
+
+                <div class="card indian">
+                <img src="img/biryani.jpeg">
+                <h3>Biryani</h3>
+                <p>₹399</p>
+                <button>Add to Cart</button>
+                </div>
+
+                <div class="card western">
+                <img src="img/pizza.jpeg">
+                <h3>Pizza</h3>
+                <p>₹499</p>
+                <button>Add to Cart</button>
+                </div>
+
+                <div class="card western">
+                <img src="img/burger.jpeg">
+                <h3>Burger</h3>
+                <p>₹250</p>
+                <button>Add to Cart</button>
+                </div>
+
+                <div class="card chinese">
+                <img src="img/momos.jpg"> 
+                <h3>Momos</h3>
+                <p>₹300</p>       
+                <button>Add to Cart</button>
+                </div>
+
+                <div class="card indian">
+                <img src="img/dosa.jpg">   
+                <h3>Dosa</h3>
+                <p>₹150</p>
+                <button>Add to Cart</button>
+                </div>
+
+                <div class="card chinese">
+                <img src="img/dish 8.jpg">
+                <h3>Fried Rice</h3>
+                <p>₹250</p>
+                <button>Add to Cart</button>
+                </div>
+
+                <div class="card western">
+                <img src="img/dish7.jpeg">   
+                <h3>French Fries</h3>
+                <p>₹150</p>
+                <button>Add to Cart</button>
+                </div>
+
+
+                
+            </div>
+
+        
+
+            <p class="view">
+                <a href="menu.html" target="_blank">View Full Menu ></a>
+            </p>
+
+        </section>
+
+        
+    </body>
+
+    <!-- _________footer -->
+    <footer>
+            <div class="sec footer_container">
+
+                <div class="footer_col">
+                    <div class="footer_logo logo">
+                        <span class="text-3xl font-semibold text-yellow-500 tracking-wide ">
+                            The Golden Spoon
+                        </span>
+                    </div>
+                    <p class="footer_text">
+                        our job is to fill your tummy with delicious food 
+                    </p>
+                    <ul class="footer_socials">
+                        <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer_col">
+                    <h4>about</h4>
+                    <ul class="footer_links">
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">features</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">menu</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>company</h4>
+                    <ul class="footer_links">
+                        <li><a href="#">my food in</a></li>
+                        <li><a href="#">partner</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_col">
+                    <h4>support</h4>
+                    <ul class="footer_links">
+                        <li><a href="#">account</a></li>
+                        <li><a href="#">support center</a></li>
+                        <li><a href="#">feedback</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">accessibility</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            
+    </footer>
+
+
+
 </body>
 
 </html>

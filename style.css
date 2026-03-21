@@ -1,0 +1,245 @@
+ body{
+        font-family: Arial, sans-serif;
+        background: linear-gradient(#3e5151 #decba4 #3e5151);
+        }
+
+        *{
+          -webkit-tap-highlight-color: transparent;
+         }
+
+           h2, h3, p, span, .view{
+           user-select: none;
+          }
+
+        .popular{
+        width: 85%;
+        margin: auto;
+        padding: 20px 0;
+        }
+        
+
+        .popular h2{
+        font-size: 28px;
+        margin-bottom: 20px;
+        }
+
+        /* Tabs */
+        .tabs{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 25px;
+        }
+
+        .tabs span{
+        cursor: pointer;
+        padding-bottom: 5px;
+        margin-right: 15px;
+        
+        }
+
+        .tabs .active{
+        border-bottom: 3px solid orange;
+        font-weight: bold;
+        }
+
+
+
+
+
+
+        /* Cards */
+        .card-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 15px;
+        }
+        
+ 
+        .card{
+        background: #e8ddc7;
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+
+        }
+
+
+        .card:hover{
+        transform: translateY(-5px);
+        }
+
+        .card img{
+        width: 100%;
+        border-radius: 10px;
+        height: 180px;     
+        object-fit: cover; 
+        }
+
+        .card h3{
+        margin: 10px 0 5px;
+        }
+
+        .card p{
+        color: #555;
+        margin-bottom: 10px;
+        }
+
+        .card button{
+        background: orange;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        }
+        .card button:hover {
+        background: #f5c2a0;
+        transform: scale(1.05);
+        }
+
+        .view{
+        text-align: center;
+        margin-top: 20px;
+        color: #555;
+        cursor: pointer;
+        }
+
+
+
+
+
+
+        /* View Menu */
+        .view{
+        margin-top: 20px;
+        }
+
+        .view a{
+        text-decoration: none;
+        color: black;
+        }
+
+        /*  RESPONSIVE */
+
+        /* Tablet */
+        @media(max-width: 900px){
+        .card-container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        }
+
+        /* Mobile */
+        @media(max-width: 500px){
+        .card-container{
+            grid-template-columns: 1fr;
+        }
+
+        .tabs{
+            flex-wrap: wrap;
+        }
+        }
+
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #3e5151, #decba4, #3e5151);
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.sec.footer_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo.logo {
+    margin-bottom: 1rem;
+}
+
+.footer_logo.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#373636; /* Yellow color for the logo */
+}
+
+.footer_text {
+    color: #373636;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.footer_socials {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_socials li a {
+    color: #373636;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer_socials li a:hover {
+    color: #f39c12; /* Hover color */
+}
+
+.footer_col h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #373636;
+    text-transform: uppercase;
+}
+
+.footer_links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer_links a {
+    color: #373636;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_links a:hover {
+    color: #f39c12; /* Hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sec.footer_container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    footer {
+        padding: 20px 10px;
+    }
+}
