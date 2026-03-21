@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./menu.css" rel="stylesheet">
+    <title>Menu</title>
+</head>
+
+<body class="bg-gradient-to-r h-screen w-screen from-[#3e5151] via-[#decba4] to-[#3e5151]">
+    <div class="shadow-2xl flex justify-between items-center mx-10 mt-10 p-5 rounded-t-2xl bg-white">
+        <div class="flex justify-center items-center gap-2">
+            <i class="fa-solid fa-bell-concierge fa-xl" style="color: rgb(22, 22, 22);"></i>
+            <h1 class="text-2xl font-bold">The Golden Spoon</h1>
+        </div>
+
+
+        <div class="flex gap-10 ">
+            <a href="./index.html" class="hover:underline hidden lg:block">Home</a>
+            <a href="" class="hover:underline hidden lg:block">Menu</a>
+            <a href="./booking.html" class="hover:underline hidden lg:block">Booking</a>
+            <a href="" class="hover:underline hidden lg:block">Feedback</a>
+
+        </div>
+
+        <div id="one" class="lg:hidden">
+            <i class="fa-solid fa-bars cursor-pointer" style="color: rgb(22, 22, 22);"></i>
+        </div>
+
+
+    </div>
+    <div id="two"
+        class="fixed top-0 right-0 bg-black text-white w-1/2 h-screen flex flex-col p-10 gap-10 z-40 transition duration-1000 translate-x-full">
+        <i id="three" class="fa-solid fa-xmark absolute right-10 cursor-pointer hover:text-amber-300"
+            style="color: white"></i>
+        <a href="./index.html" class="hover:underline mt-10">Home</a>
+        <a href="" class="hover:underline ">Menu</a>
+        <a href="./booking.html" class="hover:underline ">Booking</a>
+        <a href="" class="hover:underline ">Feedback</a>
+    </div>
+
+    <!-- menu -->
+    <div class="menu">
+        <div class="menu_container">
+            <h4 class="Cuisine">CUISINE</h4>
+            <div>
+                <label><input type="checkbox" name="filter" id="Indian" value="Indian">INDIAN</label>
+                <label><input type="checkbox" name="filter" id="Chinese" value="Chinese">CHINESE</label>
+                <label><input type="checkbox" name="filter" id="Western" value="Western">WESTERN</label>
+            </div>
+            <h4 class="special">SPECIAL ITEMS</h4>
+            <div>
+                <label><input type="checkbox" name="filter" id="Dessert" value="Dessert">DESSERT</label>
+                <label><input type="checkbox" name="filter" id="Drinks" value="Drinks">DRINKS</label>
+            </div>
+
+            <hr class="line">
+        </div>
+        <div class="product">
+            <form action="" class="nav_product">
+                <input type="search" id="search" placeholder="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="menu_product">
+                <div class="product_item" data-tags="western">
+                    <img src="./img/68c15eb8-3a80-4203-a373-db0d3f144373.jpg" alt="" style="width: 20vw;">
+                    <h3>CHICKEN NUGGETS WITH DIP</h3>
+                    <p>₹ 340.00</p>
+                    <button>Order</button>
+                </div>
+                <div class="product_item" data-tags="western dessert">
+                    <img src="./img/dessert/pexels-any-lane-5945562.jpg" alt="" style="width: 20vw;">
+                    <h3>CHOCOLATE DESSERT</h3>
+                    <p>₹ 250.00</p>
+                    <button>Order</button>
+                </div>
+                <div class="product_item" data-tags="indian">
+                    <img src="./img/047d6254-4ccc-489f-b7fe-e5372f320dd8.jpg" alt="" style="width: 20vw;">
+                    <h3>GRILLED GOURMET MEAT</h3>
+                    <p>₹ 340.00</p>
+                    <button>Order</button>
+                </div>
+
+
+                <div class="product_item" data-tags="indian">
+                    <img src="./img/12b22f71-cadc-4f4b-8b50-a681901930c4.jpg" alt="" style="width: 20vw;">
+                    <h3>HYDERABAD BRIYANI</h3>
+                    <p>₹ 170.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="indian drinks">
+                    <img src="./img/drinks/pexels-143deepak-6808666.jpg" alt="" style="width: 20vw;">
+                    <h3>BUTTER MILK</h3>
+                    <p>₹ 340.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="indian">
+                    <img src="./img/9d5b584a-69c4-474d-ab99-77f85f82f37e.jpg" alt="" style="width: 20vw;">
+                    <h3>FULL MAEL WITH PAPAD</h3>
+                    <p>₹ 650.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="western">
+                    <img src="./img/80072fca-1ce5-4074-8361-f399a93d2d39.jpg" alt="" style="width: 20vw;">
+                    <h3>LOADED PIZZA</h3>
+                    <p>₹ 250.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="western drinks">
+                    <img src="./img/drinks/pexels-mohamed-olwy-2158880271-36169161.jpg" alt="" style="width: 20vw;">
+                    <h3>COCKTAIL</h3>
+                    <p>₹ 190.00</p>
+                    <button>Order</button>
+                </div>
+                <div class="product_item" data-tags="indian">
+                    <img src="./img/4ba13394-fee2-4fab-b340-c66ddc0d46df.jpg" alt="" style="width: 20vw;">
+                    <h3>MUTTON BIRYANI</h3>
+                    <p>₹ 190.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="western">
+                    <img src="./img/363444e1-1365-4ae9-a90d-dd33c07ac1f5.jpg" alt="" style="width: 20vw;">
+                    <h3>DOUBLE PATTY BURGER</h3>
+                    <p>₹ 105.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="indian dessert">
+                    <img src="./img/dessert/pexels-dimitry-fadeev-3073906-4664308.jpg" alt="" style="width: 20vw;">
+                    <h3>CREAM CAKE</h3>
+                    <p>₹ 236.00</p>
+                    <button>Order</button>
+                </div>
+                <div class="product_item" data-tags="chinese drinks">
+                    <img src="./img/drinks/pexels-rdne-6692092.jpg" alt="" style="width: 20vw;">
+                    <h3>HERBAL TEA</h3>
+                    <p>₹ 2950.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="western">
+                    <img src="./img/a9045477-4be8-44dc-951a-f914ac5ae31b.jpg" alt="" style="width: 20vw;">
+                    <h3>PENNE PASTA</h3>
+                    <p>₹ 105.00</p>
+                    <button>Order</button>
+
+                </div>
+                <div class="product_item" data-tags="indian drinks">
+                    <img src="./img/drinks/pexels-bluerhinomedia-2789328.jpg" alt="" style="width: 20vw;">
+                    <h3>LAYERED FRUIT MOCKTAIL</h3>
+                    <p>₹ 210.00</p>
+                    <button>Order</button>
+                </div>
+                <div class="product_item" data-tags="indian dessert">
+                    <img src="./img/dessert/pexels-szymon-shields-1503561-35974876.jpg" alt="" style="width: 20vw;">
+                    <h3>WAFFLES WITH ICE CREAM</h3>
+                    <p>₹ 390.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="western">
+                    <img src="./img/ccfaf141-775c-4b93-96bb-6ac9992c96aa.jpg" alt="" style="width: 20vw;">
+                    <h3>FRENCH FRIES WITH KETCHUP</h3>
+                    <p>₹ 750.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="chinese dessert">
+                    <img src="./img/dessert/pexels-minchephoto-7491913.jpg" alt="" style="width: 20vw;">
+                    <h3>VANILLA WITH CHOCOLATE SYRUP</h3>
+                    <p>₹ 395.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="indian drinks">
+                    <img src="./img/drinks/pexels-caio-niceas-2148806704-36580799.jpg" alt="" style="width: 20vw;">
+                    <h3>MARGARITA</h3>
+                    <p>₹ 150.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="western drinks">
+                    <img src="./img/drinks/pexels-dewey-gallery-2389867-4030788.jpg" alt="" style="width: 20vw;">
+                    <h3>CHAI</h3>
+                    <p>₹ 200.00</p>
+                    <button>Order</button>
+                </div>
+                <div class="product_item" data-tags="indian">
+                    <img src="./img/e7711ed0-724d-401d-9dd0-78af23841410.jpg" alt="" style="width: 20vw;">
+                    <h3>PANEER MASALA</h3>
+                    <p>₹ 290.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="chinese drinks">
+                    <img src="./img/drinks/pexels-jeffery-wang-1091657720-36151075.jpg" alt="" style="width: 20vw;">
+                    <h3>HOT TEA</h3>
+                    <p>₹ 220.00</p>
+                    <button>Order</button>
+                </div>
+                <div class="product_item" data-tags="chinese">
+                    <img src="./img/eb5cbfed-2ca3-4abf-9226-3fab900675a2.jpg" alt="" style="width: 20vw;">
+                    <h3>CHICKEN SOUP</h3>
+                    <p>₹ 165.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="indian dessert">
+                    <img src="./img/dessert/pexels-valeriya-36183209.jpg" alt="" style="width: 20vw;">
+                    <h3>CHOCOLATE LAVA CAKE</h3>
+                    <p>₹ 280.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="indian dessert">
+                    <img src="./img/dessert/pexels-virgold-36052802.jpg" alt="" style="width: 20vw;">
+                    <h3>CHEESE CAKE</h3>
+                    <p>₹ 290.00</p>
+                    <button>Order</button>
+                </div>
+                <div class="product_item" data-tags="chinese">
+                    <img src="./img/f1f53a53-2829-4ea3-ae00-6e283a538208.jpg" alt="" style="width: 20vw;">
+                    <h3>SPAGHETTI</h3>
+                    <p>₹ 150.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="indian drinks">
+                    <img src="./img/drinks/pexels-roman-odintsov-4958898.jpg" alt="" style="width: 20vw;">
+                    <h3>FRUIT BASED DRINK</h3>
+                    <p>₹ 115.00</p>
+                    <button>Order</button>
+
+
+                </div>
+                <div class="product_item" data-tags="chinese">
+                    <img src="./img/f4c6bf11-8384-4b2e-a60c-63d5ae5bce79.jpg" alt="" style="width: 20vw;">
+                    <h3>FRIED APPETIZER WITH DIP</h3>
+                    <p>₹ 295.00</p>
+                    <button>Order</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>
