@@ -12,9 +12,6 @@ c.addEventListener("click",()=>{
     b.classList.toggle("translate-x-full")
 })
 
-d.addEventListener("click",()=>{
-    alert("Table Booked Successfully")
-})
 
 e.addEventListener("click",()=>{
     alert("Item added to cart")

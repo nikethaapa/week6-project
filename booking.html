@@ -44,6 +44,149 @@
         <a href="./feedback.html" class="hover:underline ">Feedback</a>
     </div>
 
+    <section class="mx-10 bg-white rounded-b-2xl shadow-2xl p-8">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-800">Available Tables</h2>
+            <p class="text-gray-600 mt-2">Choose your preferred table for booking</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="h-72 rounded-[30px] bg-cover bg-center relative overflow-hidden p-6 flex flex-col justify-end"
+                style="background-image: url('./img/couplet1.jpg');">
+                <div class="absolute inset-0 bg-black/35"></div>
+                <div class="relative z-10 text-white">
+                    <h3 class="text-3xl text-center font-bold mb-2">Table 1</h3>
+                    <p class="text-lg text-center mb-1">Couple Seats 💗</p>
+                    <p class="text-green-300 text-center font-semibold mb-4">Available</p>
+                    <button
+                        class="bg-black/80 text-white px-4 py-2 rounded cursor-pointer hover:bg-black mx-auto block book-btn"
+                        data-table="Table 1">
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="h-72 rounded-[30px] bg-cover bg-center relative overflow-hidden p-6 flex flex-col justify-end"
+                style="background-image: url('./img/t4.jpg');">
+                <div class="absolute inset-0 bg-black/35"></div>
+                <div class="relative z-10 text-white">
+                    <h3 class="text-3xl text-center font-bold mb-2">Table 2</h3>
+                    <p class="text-lg text-center mb-1">4 Seats</p>
+                    <p class="text-green-300 text-center font-semibold mb-4">Available</p>
+                    <button
+                        class="bg-black/80 text-white px-4 py-2 rounded cursor-pointer hover:bg-black mx-auto block book-btn"
+                        data-table="Table 2">
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="h-72 rounded-[30px] bg-cover bg-center relative overflow-hidden p-6 flex flex-col justify-end"
+                style="background-image: url('./img/t3.jpg');">
+                <div class="absolute inset-0 bg-black/35"></div>
+                <div class="relative z-10 text-white">
+                    <h3 class="text-3xl text-center font-bold mb-2">Table 3</h3>
+                    <p class="text-lg text-center mb-1">6 Seats</p>
+                    <p class="text-green-300 text-center font-semibold mb-4">Booked</p>
+                    <button
+                        class="bg-black/80 text-white px-4 py-2 rounded cursor-pointer hover:bg-black mx-auto block book-btn"
+                        data-table="Table 3">
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+
+
+
+            <div class="h-72 rounded-[30px] bg-cover bg-center relative overflow-hidden p-6 flex flex-col justify-end"
+                style="background-image: url('./img/couplet1.jpg');">
+                <div class="absolute inset-0 bg-black/35"></div>
+                <div class="relative z-10 text-white">
+                    <h3 class="text-3xl text-center font-bold mb-2">Table 4</h3>
+                    <p class="text-lg text-center mb-1">Couple Seats 💗</p>
+                    <p class="text-green-300 text-center font-semibold mb-4">Available</p>
+                    <button
+                        class="bg-black/80 text-white px-4 py-2 rounded cursor-pointer hover:bg-black mx-auto block book-btn"
+                        data-table="Table 4">
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="h-72 rounded-[30px] bg-cover bg-center relative overflow-hidden p-6 flex flex-col justify-end"
+                style="background-image: url('./img/t5.jpg');">
+                <div class="absolute inset-0 bg-black/35"></div>
+                <div class="relative z-10 text-white">
+                    <h3 class="text-3xl text-center font-bold mb-2">Table 5</h3>
+                    <p class="text-lg text-center mb-1">8 Seats</p>
+                    <p class="text-green-300 text-center font-semibold mb-4">Booked</p>
+                    <button
+                        class="bg-black/80 text-white px-4 py-2 rounded cursor-pointer hover:bg-black mx-auto block book-btn"
+                        data-table="Table 5">
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="h-72 rounded-[30px] bg-cover bg-center relative overflow-hidden p-6 flex flex-col justify-end"
+                style="background-image: url('./img/t4.jpg');">
+                <div class="absolute inset-0 bg-black/35"></div>
+                <div class="relative z-10 text-white">
+                    <h3 class="text-3xl text-center font-bold mb-2">Table 6</h3>
+                    <p class="text-lg text-center mb-1">4 Seats</p>
+                    <p class="text-green-300 text-center font-semibold mb-4">Available</p>
+                    <button
+                        class="bg-black/80 text-white px-4 py-2 rounded cursor-pointer hover:bg-black mx-auto block book-btn"
+                        data-table="Table 6">
+                        Book Now
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .nameerror,
+        .emailerror,
+        .phoneerror {
+            color: red;
+            display: none;
+        }
+    </style>
+
+    <section id="booking-form" class="mx-10 mt-8 bg-white rounded-2xl shadow-2xl p-8 hidden">
+        <h2 class="text-3xl font-bold text-center mb-6">Book Your Table</h2>
+
+        <form class="grid gap-4">
+            <input id="selected-table" type="text" placeholder="Selected Table" class="border p-3 rounded outline-none"
+                readonly>
+
+            <input id="name" type="text" placeholder="Your Name" class="border p-3 rounded outline-none" required>
+            <span class="nameerror">Name Must contain only letter</span>
+
+            <input id="email" type="email" placeholder="Your Email ID" class="border p-3 rounded outline-none" required>
+            <span class="emailerror">Please provide valid Gmail Address</span>
+
+            <input id="phone" type="tel" placeholder="Phone Number" class="border p-3 rounded outline-none" required>
+            <span class="phoneerror">Phone Number must contains only 10 Digits</span>
+
+            <input type="date" class="border p-3 rounded outline-none" required>
+            <input type="time" class="border p-3 rounded outline-none" required>
+            <input type="number" placeholder="Number of Guests" class="border p-3 rounded outline-none" required>
+
+            <button id="submit" type="submit" class="bg-black text-white py-3 rounded hover:bg-gray-800">
+                Confirm Booking
+            </button>
+        </form>
+
+    </section>
+
     <!-- _________footer -->
     <footer class=" bg-white" >
         <div class="bg-white text-black p-10 sec footer_container">
