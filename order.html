@@ -13,7 +13,7 @@
 
 <body class="h-screen bg-gradient-to-r from-[#3e5151] via-[#decba4] to-[#3e5151]">
     <!--NavBar-->
-    <div class="shadow-2xl flex justify-between items-center mx-10 mt-10 p-5 rounded-t-2xl bg-white">
+    <div class="mb-10 shadow-2xl flex justify-between items-center mx-10 mt-10 p-5 rounded-t-2xl bg-white">
         <div class="flex justify-center items-center gap-2">
             <i class="fa-solid fa-bell-concierge fa-xl" style="color: rgb(22, 22, 22);"></i>
             <h1 class="text-2xl font-bold">The Golden Spoon</h1>
@@ -21,7 +21,7 @@
 
 
         <div class="flex gap-10 ">
-            <a href="#" class="hover:underline hidden lg:block">Home</a>
+            <a href="./index.html" class="hover:underline hidden lg:block">Home</a>
             <a href="./menu.html" class="hover:underline hidden lg:block">Menu</a>
             <a href="./booking.html" class="hover:underline hidden lg:block">Booking</a>
             <a href="./order.html" class="hover:underline hidden lg:block">Orders</a>
@@ -40,7 +40,7 @@
         class="fixed top-0 right-0 bg-black text-white w-1/2 h-screen flex flex-col p-10 gap-10 z-40 transition duration-1000 translate-x-full">
         <i id="three" class="fa-solid fa-xmark absolute right-10 cursor-pointer hover:text-amber-300"
             style="color: white"></i>
-        <a href="#" class="hover:underline mt-10">Home</a>
+        <a href="./index.html" class="hover:underline mt-10">Home</a>
         <a href="./menu.html" class="hover:underline ">Menu</a>
         <a href="./booking.html" class="hover:underline ">Booking</a>
         <a href="./order.html" class="hover:underline ">Orders</a>
@@ -48,14 +48,54 @@
     </div>
 
 
-    
+    <section class="mx-10  p-10 bg-white">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- LEFT -->
+            <div>
+                <h2 class="text-2xl font-bold mb-6">Customer Reviews</h2>
+
+                <div class="space-y-4">
+                    <div class="bg-blue-300 p-5 rounded-xl shadow-2xl cursor-pointer hover:scale-110 transition hover:duration-300  ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <h3 class="font-semibold mt-2">Chloe Moore <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></h3>
+                    </div>
+
+                    <div class="bg-blue-300 p-5 rounded-xl shadow-2xl cursor-pointer hover:scale-110 transition hover:duration-300  ">
+                        <p>Amazing food and quick delivery!</p>
+                        <h3 class="font-semibold mt-2">Rahul Kumar <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></h3>
+                    </div>
+
+                    <div class="bg-blue-300 p-5 rounded-xl shadow-2xl cursor-pointer hover:scale-110 transition hover:duration-300  ">
+                        <p>Best restaurant website UI and tasty dishes!</p>
+                        <h3 class="font-semibold mt-2">Priya Sharma <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="flex items-center justify-center ">
+                <div class="bg-gradient-to-r from-orange-400 to-red-500 text-white p-10 rounded-xl shadow-2xl  w-full text-center cursor-pointer hover:scale-110 transition hover:duration-300  ">
+                    <h2 class="text-3xl font-bold mb-4">🎉 Special Offer</h2>
+                    <p class="mb-6">Get 20% OFF on your first order!</p>
+                    <button class="bg-white text-orange-500 px-6 py-2 rounded-lg font-semibold cursor-pointer hover:-translate-y-2 hover:duration-300 ">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
 
 
 
 
     <!-- _________footer -->
-    <footer class="mx-10 bg-white">
-        <div class="bg-white text-black p-10 sec footer_container">
+    <footer class=" bg-white">
+        <div class="bg-white text-black  p-14 sec footer_container">
 
             <div class="footer_col">
                 <div class="footer_logo logo">
